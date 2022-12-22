@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+}
+
+.col {
+	width: 25%;
+	min-height: 200px;
+	padding: 15px;
+}
+
+/* STYLE RULES */
+
+header {
+	background-color: brown;
+	margin-bottom: 80px;
+}
+
+nav>.row {
+	justify-content: space-between;
+}
+
+#test-section .col:first-child {
+	width: 50%;
+}
+
+#test-section .col:nth-child(5) {
+	width: 75%;
+}
+
+.card:first-child {
+	height: 100%;
+	background-color: aqua;
+}
+
+.clearfix::after {
+	content: '';
+	clear: both;
+	display: table;
+}
